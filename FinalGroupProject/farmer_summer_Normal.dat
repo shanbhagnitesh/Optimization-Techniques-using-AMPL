@@ -1,0 +1,25 @@
+# Deterministic farmer problem (normal year)
+
+set CROPS1 := WHEAT CORN ;
+set CROPS2 := SUGAR ;
+set CROPS3 := POTATO ;
+
+param:		prod	cplant         mprice   tax:=
+	WHEAT	2.5		150     50      1.8    
+	CORN	3		230     60      2.1 
+	SUGAR	20		260     75      3.2
+	POTATO  20              260     65      2.2;  
+
+param:		min_cattle	psale	pbuy :=
+	WHEAT	200		170		238
+	CORN	240		150		210  ;
+
+
+param pvbelow := 36;
+param pvabove:= 10;
+param potbelow := 36;
+param potabove := 10;
+param terra_total := 500; 
+param u := 1;
+param v := 0;
+
